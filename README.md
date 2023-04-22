@@ -343,55 +343,9 @@ in node the source code you write is not visible to the end user
 	
 </div>
 
-
-# PepCoding
-
-
-<details><summary>PepCoding</summary>
-	<div class="button-group minor-group">
-    
-  
-<p>
-	
-	
-</div>
-
-#### Problems
-
-  1.  <a href="https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-1-official/ojquestion" class="button primary">Pattern 1</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/Pattern1.java" class="button primary">Sol</a>
-	
-  2.  <a href="https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-2-official/ojquestion" class="button primary">Pattern 2</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/pattern2.java" class="button primary">Sol</a>
-	
-  3.  <a href="https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-3-official/ojquestion" class="button primary">Pattern 3</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/pattern3.java" class="button primary">Sol</a>
-	
-  4.  <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/digit-frequency-official/ojquestion" class="button primary">Digit Frequency</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/Digit_Frequency.java" class="button primary">Sol</a>
-	
-  5.  <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal-to-any-base-official/ojquestion" class="button primary">Decimal To Any Base</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/Decimal_To_Any_Base.java" class="button primary">Sol</a>
-	
-  6.  <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-to-decimal-official/ojquestion#" class="button primary">Any Base To Decimal</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/AnyBASE_To_Decimal.java" class="button primary">Sol</a>
-	
-  7.  <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-to-any-base-official/ojquestion" class="button primary">Any Base To Any Base</a> | <a href="https://raw.githubusercontent.com/DHIMANvivek/105-Days-From-Now/master/pepCoding/AnyBaseToAnyBase.java" class="button primary">Sol</a>
-	
-	
-	
-
 </p>
 </details>
 
-
-
-
-# LeetCode
-
-
-<details><summary>LeetCode</summary>
-	<div class="button-group minor-group">
-    
-  
-<p>
-	
-	
-</div>
 
 # Start Learning
 
