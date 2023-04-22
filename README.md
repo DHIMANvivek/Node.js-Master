@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-    node.js-->Master;
+    Master-->Node.js;
 ```
 
 
