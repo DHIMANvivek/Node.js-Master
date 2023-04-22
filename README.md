@@ -6,10 +6,6 @@ graph TD;
 ```
 
 
-
-# Start
-
-
 <details><summary>Notes</summary>
 	<div class="button-group minor-group">
     
