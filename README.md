@@ -173,19 +173,7 @@ this makes the current file "export" something to any other file who "requires" 
 ex:-
 
 
-fileB                                                    fileA
-
-// Require fileA                                         // Create a lib object
-
-var myImportedFunction = require('fileA');               var lib = {};
-
-// use the foo function from fileA                       // Add a foo function to the lib
-
-myImportedFunction.foo();                                lib.foo  = function() { console.log('hello') }
-
-
-                                                         // export the whole lib
-                                                         module.exports = lib;
+![image](https://user-images.githubusercontent.com/53940939/233800588-2a635e68-9f2f-490a-85e0-32bd111a0c4e.png)
 
 nodes module system creates a dependency tree, which tells node which files are needed to run the application
 
