@@ -441,6 +441,46 @@ console.log(query);
 // Output: key1=value1&key2=value2&key3=value3
 
 ```
+	
+	
+lets start with parsedUrl ( parsedUrl - > contain whole bunch of keys of parsed meta data about the request path or url that came in ) :->
+
+pathname is the key that sets on parsedUrl object , it is untrimmed path that user requests to make it trimmed we need to code 
+-> 
+```	
+var trimmedPath = path.replace(/^\/+|\/+$/g, ''); // this will replace any extra splash from the pathname.
+```
+
+url path code is :
+```
+// dependencies
+var http = require('http');
+var url = require('url');
+
+// the server should respond to all requests with a string 
+var server = http.createServer( function (req,res){
+
+// get the url and parse it
+var parsedURL = url.parse(req.url,true);
+
+// get the path from the URL 
+var path = parsedURL.pathname;
+var trimmedPath = path.replace(/^\/+|\/+$/g, '');
+
+// send the response
+res.end('Hello\n');
+
+// log the request path 
+console.log('Request received on path '+trimmedPath);
+});
+
+// start the server ,and have it listen on port 3000
+server.listen(3000 , function(){
+    console.log('server is start listening on port 3000 now');
+});
+
+```
+
 </a>
 	
 
