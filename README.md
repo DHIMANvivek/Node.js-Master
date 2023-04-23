@@ -348,7 +348,7 @@ in node the source code you write is not visible to the end user
 </details>
 
 
-# Start Learning ( Beginner )
+# Beginner 
 
 
 <details><summary>Start Learning</summary>
