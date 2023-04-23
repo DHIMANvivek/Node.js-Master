@@ -376,6 +376,100 @@ An "uptime monitor" allows users to enter URLs they want monitored, and receive 
 6. the api allows a signed-in user to edit or delete any of their checks.
 7. in the background , workers perform all the "checks" at the appropriate times and send alerts to the users when a check changes its state from "up" to "down" , or vice versa. 
 
+for our app , we will use the filesystem as a key-value store of JSON docs. In a real app, you'd want a DB.
+
+*Basic Scaffolding 
+
+index.js is the file that we have to invoke 
+
+to show all the files in the directory -> ls -a -l
+
+node index.js -> in this node sends the script index.js to the v8 and then process it then console the output.
+
+*Starting a server ->
+
+starting up an HTTP server
+
+first we define the http module that what the http does
+
+// dependencies
+var http = require('http')
+
+// the server should respond to all requests with a string 
+var server = http.createServer( function (req,res){
+  res.end('Hello\n');
+});
+
+// start the server ,and have it listen on port 3000
+server.listen(3000 , function(){
+    console.log('server is start listening on port 3000 now');
+});
+
+
+to test -> 1. node index.js 
+           2. curl localhost:3000
+
+* Parsing request path
+
+The queryString module provides two main methods for working with query strings: queryString.parse() and queryString.stringify().
+
+The queryString.parse() method is used to parse a query string and convert it into a JavaScript object. It takes a query string as an argument and returns an object containing key-value pairs.
+
+For example, consider the following query string:
+
+const queryString = require('querystring');
+
+const query = 'key1=value1&key2=value2&key3=value3';
+const obj = queryString.parse(query);
+
+console.log(obj);
+// Output: { key1: 'value1', key2: 'value2', key3: 'value3' }
+
+The queryString.stringify() method is used to convert a JavaScript object into a query string. It takes an object as an argument and returns a query string.
+
+For example, consider the following JavaScript object:
+
+const queryString = require('querystring');
+
+const obj = { key1: 'value1', key2: 'value2', key3: 'value3' };
+const query = queryString.stringify(obj);
+
+console.log(query);
+// Output: key1=value1&key2=value2&key3=value3
+
+lets start with parsedUrl ( parsedUrl - > contain whole bunch of keys of parsed meta data about the request path or url that came in ) :->
+
+pathname is the key that sets on parsedUrl object , it is untrimmed path that user requests to make it trimmed we need to code -> var trimmedPath = path.replace(/^\/+|\/+$/g, ''); // this will replace any extra splash from the pathname.
+
+url path code is :
+
+// dependencies
+var http = require('http');
+var url = require('url');
+
+// the server should respond to all requests with a string 
+var server = http.createServer( function (req,res){
+
+// get the url and parse it
+var parsedURL = url.parse(req.url,true);
+
+// get the path from the URL 
+var path = parsedURL.pathname;
+var trimmedPath = path.replace(/^\/+|\/+$/g, '');
+
+// send the response
+res.end('Hello\n');
+
+// log the request path 
+console.log('Request received on path '+trimmedPath);
+});
+
+// start the server ,and have it listen on port 3000
+server.listen(3000 , function(){
+    console.log('server is start listening on port 3000 now');
+});
+
+
 
 </a>
 	
