@@ -360,9 +360,25 @@ in node the source code you write is not visible to the end user
 	
 </div>
 
-#### Start
 
-<a> loading....  </a>
+
+<a>
+first node app -> building RESTful API for an uptime monitoring application
+
+we will be using a number of built-in Node modules.
+
+An "uptime monitor" allows users to enter URLs they want monitored, and receive alerts when those resources "go down" or "come back up"
+
+1. the api listens on a port and accepts incoming HTTP requests for POST , GET , PUT , DELETE AND HEAD.
+2. the api allows a client to connect . then create a new user, then edit and delete that user.
+3. the api allows a user to "sign in" which gives them a token that they can use for subsequent authenticated requests.
+4. the api allows the user to "sign out" which invalidates their token.
+5. the api allows a signed-in user to use their token to create a new "check ( uptime monitoring )".
+6. the api allows a signed-in user to edit or delete any of their checks.
+7. in the background , workers perform all the "checks" at the appropriate times and send alerts to the users when a check changes its state from "up" to "down" , or vice versa. 
+
+
+</a>
 	
 
 </p>
