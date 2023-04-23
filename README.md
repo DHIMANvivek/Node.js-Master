@@ -406,6 +406,41 @@ server.listen(3000 , function(){
     console.log('server is start listening on port 3000 now');
 });
 ```
+	
+to test -> 1. node index.js 
+           2. curl localhost:3000
+
+* Parsing request path
+
+The queryString module provides two main methods for working with query strings: queryString.parse() and queryString.stringify().
+
+The queryString.parse() method is used to parse a query string and convert it into a JavaScript object. It takes a query string as an argument and returns an object containing key-value pairs.
+
+For example, consider the following query string:
+	
+```
+const queryString = require('querystring');
+
+const query = 'key1=value1&key2=value2&key3=value3';
+const obj = queryString.parse(query);
+
+console.log(obj);
+// Output: { key1: 'value1', key2: 'value2', key3: 'value3' }
+
+The queryString.stringify() method is used to convert a JavaScript object into a query string.
+ It takes an object as an argument and returns a query string.
+
+For example, consider the following JavaScript object:
+
+const queryString = require('querystring');
+
+const obj = { key1: 'value1', key2: 'value2', key3: 'value3' };
+const query = queryString.stringify(obj);
+
+console.log(query);
+// Output: key1=value1&key2=value2&key3=value3
+
+```
 </a>
 	
 
