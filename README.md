@@ -538,7 +538,7 @@ Payload data in NodeJs is just packets or chunks of data sent to the server and 
 UTF-8 is a character encoding standard that is used to represent characters in electronic communication.
 
 // Get the Payload, if any
-var decode = new StringDecoder('utf-8');
+```var decode = new StringDecoder('utf-8');```
 
 
 
