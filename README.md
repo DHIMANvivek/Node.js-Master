@@ -483,28 +483,31 @@ server.listen(3000 , function(){
 	
 * Parsing HTTP Methods ->
 
-get the method by using -> ```var method = req.method.toLowerCase();```
+get the method by using -> ``` var method = req.method.toLowerCase();
+```
 
 and call the method variable in console to see the request method
 
-```console.log('Request received on path with this method : '+method);
-});```
+```
+console.log('Request received on path with this method : '+method);
+});
+```
 
 * Parsing Query Strings 
 
-```var queryStringObject = parsedURL.query;```
+``` var queryStringObject = parsedURL.query; ```
 
 console queryString ->
 
-```console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject```
+``` console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject ```
 
 // output -> these query string parameters :  [Object: null prototype] { fizz: 'fuzz' }
 
 * Parsing Request Headers 
 
-```var headers = req.headers;
+``` var headers = req.headers;
 
-console.log('headers ',headers);```
+console.log('headers ',headers); ```
 
 open postman and then give key and pair values : 
 
@@ -527,14 +530,15 @@ Received with these headers  {
   'sec-fetch-dest': 'empty',
   'accept-encoding': 'gzip, deflate, br',
   'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
-}```
+}
+```
 
 
 * Parsing Payload
 
 Payload data in NodeJs is just packets or chunks of data sent to the server and that cannot be accessed ordinarily. They can be accessed when we decode them, using the string_decoder module
 
-```var StringDecoder = require('string_decoder').StringDecoder;```
+``` var StringDecoder = require('string_decoder').StringDecoder; ```
 
 UTF-8 is a character encoding standard that is used to represent characters in electronic communication.
 ```
