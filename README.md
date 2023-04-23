@@ -492,7 +492,7 @@ console.log('Request received on path with this method : '+method);
 
 * Parsing Query Strings 
 
-var queryStringObject = parsedURL.query;
+```var queryStringObject = parsedURL.query;```
 
 console queryString ->
 
