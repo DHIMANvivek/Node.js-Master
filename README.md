@@ -496,9 +496,9 @@ console.log('Request received on path with this method : '+method);
 
 console queryString ->
 
-```console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject
+console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject
 
-// output -> these query string parameters :  [Object: null prototype] { fizz: 'fuzz' } ```
+// output -> these query string parameters :  [Object: null prototype] { fizz: 'fuzz' }
 
 
 
