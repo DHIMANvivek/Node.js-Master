@@ -389,8 +389,23 @@ node index.js -> in this node sends the script index.js to the v8 and then proce
 
 *Starting a server ->
 
+starting up an HTTP server
 
+first we define the http module that what the http does
+```	
+// dependencies
+var http = require('http')
 
+// the server should respond to all requests with a string 
+var server = http.createServer( function (req,res){
+  res.end('Hello\n');
+});
+
+// start the server ,and have it listen on port 3000
+server.listen(3000 , function(){
+    console.log('server is start listening on port 3000 now');
+});
+```
 </a>
 	
 
