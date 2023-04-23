@@ -480,6 +480,68 @@ server.listen(3000 , function(){
 });
 
 ```
+	
+* Parsing HTTP Methods ->
+
+get the method by using -> ```var method = req.method.toLowerCase();```
+
+and call the method variable in console to see the request method
+
+```console.log('Request received on path with this method : '+method);
+});```
+
+* Parsing Query Strings 
+
+```var queryStringObject = parsedURL.query;```
+
+console queryString ->
+
+```console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject```
+
+// output -> these query string parameters :  [Object: null prototype] { fizz: 'fuzz' }
+
+* Parsing Request Headers 
+
+```var headers = req.headers;
+
+console.log('headers ',headers);```
+
+open postman and then give key and pair values : 
+
+ ```
+Received with these headers  {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-ch-ua': '"Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"',
+  'sec-ch-ua-mobile': '?0',
+  fizz: 'buzz',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
+  apple: 'oranges',
+  foo: 'bar',
+  'cache-control': 'no-cache',
+  'postman-token': 'b228fddd-25fd-0b0c-e3a0-68a794e54f43',
+  'sec-ch-ua-platform': '"Windows"',
+  accept: '*/*',
+  'sec-fetch-site': 'none',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
+}```
+
+
+* Parsing Payload
+
+Payload data in NodeJs is just packets or chunks of data sent to the server and that cannot be accessed ordinarily. They can be accessed when we decode them, using the string_decoder module
+
+```var StringDecoder = require('string_decoder').StringDecoder;```
+
+UTF-8 is a character encoding standard that is used to represent characters in electronic communication.
+```
+// Get the Payload, if any
+var decode = new StringDecoder('utf-8');
+```
+
 
 </a>
 	
