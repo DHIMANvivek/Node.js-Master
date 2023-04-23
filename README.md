@@ -443,31 +443,31 @@ pathname is the key that sets on parsedUrl object , it is untrimmed path that us
 
 url path code is :
 
-// dependencies
-var http = require('http');
-var url = require('url');
 
-// the server should respond to all requests with a string 
+var http = require('http');
+var url = require('url'); // dependencies
+
+// the server should respond to all requests with a string //
 var server = http.createServer( function (req,res){
 
-// get the url and parse it
-var parsedURL = url.parse(req.url,true);
 
-// get the path from the URL 
+var parsedURL = url.parse(req.url,true);// get the url and parse it
+
+
 var path = parsedURL.pathname;
-var trimmedPath = path.replace(/^\/+|\/+$/g, '');
+var trimmedPath = path.replace(/^\/+|\/+$/g, '');// get the path from the URL 
 
-// send the response
-res.end('Hello\n');
 
-// log the request path 
+res.end('Hello\n');// send the response
+
+
 console.log('Request received on path '+trimmedPath);
-});
+});// log the request path 
 
-// start the server ,and have it listen on port 3000
+
 server.listen(3000 , function(){
     console.log('server is start listening on port 3000 now');
-});
+});// start the server ,and have it listen on port 3000
 
 
 
