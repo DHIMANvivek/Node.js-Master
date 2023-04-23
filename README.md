@@ -533,7 +533,7 @@ open postman and then give key and pair values :
 
 Payload data in NodeJs is just packets or chunks of data sent to the server and that cannot be accessed ordinarily. They can be accessed when we decode them, using the string_decoder module
 
-var StringDecoder = require('string_decoder').StringDecoder;
+```var StringDecoder = require('string_decoder').StringDecoder;```
 
 UTF-8 is a character encoding standard that is used to represent characters in electronic communication.
 
