@@ -481,6 +481,24 @@ server.listen(3000 , function(){
 
 ```
 	
+* Parsing HTTP Methods ->
+
+get the method by using -> ```var method = req.method.toLowerCase();```
+
+and call the method variable in console to see the request method
+
+console.log('Request received on path with this method : '+method);
+});
+
+* Parsing Query Strings 
+
+var queryStringObject = parsedURL.query;
+
+console queryString ->
+
+console.log(' these query string parameters : ',queryStringObject); // use , not + to call the queryStringObject
+
+// output -> these query string parameters :  [Object: null prototype] { fizz: 'fuzz' }
 
 
 
