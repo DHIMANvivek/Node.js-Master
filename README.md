@@ -5,6 +5,10 @@ graph TD;
     Master-->Node.js;
 ```
 
+* Adding Https Support
+
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+
 # Overview
 
 <details><summary>Overview</summary>
