@@ -67,7 +67,7 @@ req.on('end',function(){
 
 // start the server 
 server.listen(config.port , function(){
-    console.log('server is start listening on port 3000 now');
+    console.log('server is start listening on port '+config.port+" now");
 });
 
 // Define the handlers
