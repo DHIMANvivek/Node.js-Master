@@ -1,9 +1,10 @@
-//   Routing Code , PathCode , Payload Code
+//   Routing Code , PathCode , Payload Code , added config
 
 // dependencies
 var http = require('http');
 var url = require('url');
 var StringDecoder = require('string_decoder').StringDecoder;
+var config = require('./config');
 
 // the server should respond to all requests with a string 
 var server = http.createServer( function (req,res){
@@ -56,15 +57,16 @@ req.on('end',function(){
         var payloadString = JSON.stringify(payload);
 
         // Return the Response
-        res.writeHead(statusCode);
+        res.setHeader('Content-Type','application/json');
+        res.writeHead(statusCode); // for status code 
         res.end(payloadString);
         console.log(' returning this response : ',statusCode,payloadString);
     });
 });
 });
 
-// start the server ,and have it listen on port 3000
-server.listen(3000 , function(){
+// start the server 
+server.listen(config.port , function(){
     console.log('server is start listening on port 3000 now');
 });
 
