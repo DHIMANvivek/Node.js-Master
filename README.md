@@ -570,38 +570,8 @@ UTF-8 is a character encoding standard that is used to represent characters in e
 
 
 <a>
+
 ```
-// dependencies
-var http = require('http');
-var https = require('https');
-var url = require('url');
-var StringDecoder = require('string_decoder').StringDecoder;
-var config = require('./config');
-var fs = require('fs');
-
-// Instantiate the http Server
-var httpServer = http.createServer( function (req,res){
-    unifiedServer(req,res);
-});
-
-// start the http server 
-httpServer.listen(config.httpPort , function(){
-    console.log('server is start listening on port '+config.httpPort);
-});
-
-// Instatiate the https server
-var httpsServerOptions = {
-    'key' : fs.readFileSync('./https/key.pem'),
-    'cert' : fs.readFileSync('./https/cert.pem')
-};
-var httpsServer = https.createServer(httpsServerOptions, function(req,res) {
-    
-});
-
-// start the https server
-httpsServer.listen(config.httpsPort , function(){
-    console.log('server is start listening on port '+config.httpsPort);
-});
 
 // Define the handlers
 var handlers = {};
@@ -610,8 +580,6 @@ var handlers = {};
 handlers.ping = function(data , callback){
     callback(200);
 };
-
-
 
 // not Found handler
 handlers.notFound = function(data , callback){
@@ -624,7 +592,11 @@ var router = {
     'ping' : handlers.ping
 };
 
-// all the server logic for both the http and https server 
+```
+	
+	// get the path and then get the response of the ping 
+	
+```
 var unifiedServer = function(req,res){
 
 // get the url and parse it
@@ -680,9 +652,8 @@ req.on('end',function(){
         res.end(payloadString);
         console.log(' returning this response : ',statusCode,payloadString);
     });
-});
-};
-
+});	
+	
 ```
 
 </a>
