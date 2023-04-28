@@ -555,7 +555,7 @@ UTF-8 is a character encoding standard that is used to represent characters in e
 
 
 
-# /Ping  200 For Uptime Checks  
+# /ping  200 For Uptime Checks  
 
 
 <details><summary>Code</summary>
