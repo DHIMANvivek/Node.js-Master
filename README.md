@@ -1,6 +1,6 @@
 ### Node.js By DHIMANvivek
 
-[![Everything Is AWESOME](https://user-images.githubusercontent.com/53940939/235358766-718cc7be-1a65-4218-906a-9af00bdb30c8.png)]([https://www.youtube.com/playlist?list=PLJK8Pik8ZzCjKKtDPw1NrlAoEhXe4xndK]) "Everything Is AWESOME")
+[![Everything Is AWESOME](https://user-images.githubusercontent.com/53940939/235358766-718cc7be-1a65-4218-906a-9af00bdb30c8.png)](https://www.youtube.com/playlist?list=PLJK8Pik8ZzCjKKtDPw1NrlAoEhXe4xndK "Everything Is AWESOME")
 
 
 
