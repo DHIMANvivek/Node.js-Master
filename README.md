@@ -1,6 +1,10 @@
 ### Node.js By DHIMANvivek
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+[![Everything Is AWESOME](https://user-images.githubusercontent.com/53940939/235358766-718cc7be-1a65-4218-906a-9af00bdb30c8.png)]([https://youtu.be/StTqXEQ2l-Y?t=35s](https://www.youtube.com/playlist?list=PLJK8Pik8ZzCjKKtDPw1NrlAoEhXe4xndK) "Everything Is AWESOME")
+
+
+
+
 
 ```mermaid
 graph TD;
